@@ -24,6 +24,10 @@ app.use('/heroes', heroRoutes);
 
 app.use("/file", upload);
 
+app.get('/', (req, res) => {
+    res.send("Hello to API")
+})
+
 
 connection();
 
