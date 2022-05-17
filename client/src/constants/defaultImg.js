@@ -1,0 +1,1 @@
+export const defaultImg = "http://localhost:5001/file/1652707496781-superhero-download.png";

@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  height: 100%;
+  color: #102a42;
+  background-color: #0000004d;
+  filter: drop-shadow(2px 4px 6px black);
+  overflow-x: hidden;
+  background-image: URL("images/collage-Batman-Wolverine-Hulk-Captain-America-Wonder-Woman-781869-wallhere.com.jpg")
+}
+
+body > div {
+  background: #000000ad;
+}
+
+.hero-container {
+  transition: transform 0.25s ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+}
+
+h1 {
+  text-align: center;
+  margin: 10px auto 10px;
+  font-weight: 700;
+  color: brown;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #e9ecd3;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background: rgb(33, 37, 41);
+  display: inline-flex;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  position: relative;
+  bottom: 0;
+}
+
+
+label {
+  display: block;
+  margin: 4px 0;
+  text-transform: uppercase;
+
+  span {
+    float: right;
+    text-transform: none;
+    font-style: italic;
+    opacity: 0.8;
+  }
+}
+
+.form-controll {
+  display: block;
+  padding: 8px 16px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  min-height: 35px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+
+  &:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+
+  &::placeholder {
+    color: rgba(225, 190, 190, 0.17);
+    font-size: 0.9rem;
+  }
+
+}
+
+textarea.form-controll {
+  min-height: 75px;
+}
+
+.form-group {
+  max-width: 500px;
+  margin: auto auto 30px;
+}
+
+.underline {
+  width: 8rem;
+  height: 0.25rem;
+  background: #fcb69f;
+  margin: 0 auto;
+}
+
+.bg-wrap {
+  position: relative;
+  overflow-x: hidden;
+}
+
+form {
+  padding-bottom: 10px;
+  color: white;
+  padding-bottom: 10px;
+  color: white;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 50%;
+  background-color: #000000ad;
+
+
+  .button:before {
+    padding-right: 10px;
+  }
+
+  [disabled] {
+    background: rgba(122, 238, 107, .42) !important;
+    border: 1px dashed white !important;
+  }
+
+  input {
+    text-align: center;
+    font-weight: 600 !important;
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 700px) {
+  form {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.form-header {
+  margin: 30px;
+}
+
+.file-area {
+  width: 100%;
+  position: relative;
+
+  .hide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    cursor: pointer;
+    visibility: hidden !important;
+  }
+
+  .file-dummy {
+    width: 100%;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+
+  }
+
+  &:hover .file-dummy {
+    background: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+  }
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-evenly;
+
+  .button {
+    min-width: 45%;
+  }
+}
+
+
+.button {
+  padding: 0.35rem 0.75rem;
+  letter-spacing: 1.6px;
+  color: #fff;
+  border-radius: 0.75rem;
+  border-color: transparent;
+  text-transform: uppercase;
+  transition: all .3s linear;
+  cursor: pointer;
+  transition: ease-in-out .2s;
+  line-height: 40px;
+  width: 40px;
+  padding: 0px;
+  text-align: center;
+
+  &:hover {
+    transform: scale(1.02);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.20), inset 0 0 0 99999px rgba(0, 0, 0, 0.2);
+  }
+
+  &:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    font-size: 1rem;
+    background: none;
+    color: #FFF;
+  }
+
+}
+
+.save {
+  background: #3fd27d94;
+
+  &:before {
+    content: "\f0c7";
+  }
+}
+
+.new {
+  background: #3fd27d94;
+  width: 50%;
+  height: 100px;
+  margin: 0 auto;
+  display: block;
+
+  &:before {
+    font-size: 2rem;
+    color: #ffffffbf;
+    line-height: 100px;
+    content: "\f067";
+  }
+}
+
+.cancel {
+  background: #c0392bd4;
+
+  &:before {
+    content: "\f05e";
+  }
+}
+
+.delete {
+  background: #c0392bd4;
+
+  &:before {
+    content: "\f1f8";
+  }
+}
+
+.touch {
+  transition: ease-in-out .2s;
+  line-height: 40px;
+  padding: 0px;
+  text-align: center;
+  position: relative;
+
+  &:hover {
+    background: #005f28;
+  }
+}
+#spinner {
+  position: sticky;
+  background: #f0ffff00;
+  left: 48%;
+  top: 40%;
+  z-index: 99999999999;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to right, red, purple);
+  overflow: hidden;
+  color: currentcolor;
+  font-size: 30px;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+  flex-wrap: wrap;
+
+  & > div {
+    padding: 5px;
+    position: relative;
+
+    img {
+      border: 1px solid white;
+      max-width: 50px;
+      max-height: 50px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
+
+[role="alert"] {
+  position: sticky;
+  top: 50%;
+  width: 70%;
+  margin: 0 auto;
+}
