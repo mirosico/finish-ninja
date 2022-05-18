@@ -1,4 +1,4 @@
-# finish-ninja
+# ninja
 Info:
 This is test project for sninjas.net developed by Yurii Mysko.
 Project is full stack upp which use mongoDb to store data.
