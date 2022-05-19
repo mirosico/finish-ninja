@@ -11,9 +11,6 @@ run npm i && npm start for both client and server side to start the app
 
 Test:
 
-cd server
-npm test
-
 to start unit tests
 
 cd server
