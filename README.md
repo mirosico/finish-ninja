@@ -1,6 +1,6 @@
-# ninja
+# Hero
 Info:
-This is test project for sninjas.net developed by Yurii Mysko.
+This is pet project developed by Yurii Mysko.
 This project is a MERN stack app with ability to store delete and update superhero data and their pictures.
 
 Setup:
